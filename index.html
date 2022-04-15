@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="losNumeros">
+            <div class="padre">
+                <Button id="0" class="hijo cero" value="0" onclick="cliquearNumero()">0</input>
+                    <Button id="0" class="hijo nada" value="0"></input>
+            </div>
+            <div class="padre">
+                <Button id="1" class="hijo inpar primeraColumna" value="1">01</Button>
+                <Button id="2" class="hijo par segundaColumna" value="2">02</Button>
+                <Button id="3" class="hijo inpar terceraColumna" value="3">03</Button>
+                <Button id="120" class="hijo docena pridocena" value="">1°</Button>
+            </div>
+            <div class="padre">
+                <Button id="4" class="hijo par primeraColumna"  value="4">04</Button>
+                <Button id="5" class="hijo inpar segundaColumna"  value="5">05</Button>
+                <Button id="6" class="hijo par terceraColumna"  value="6">06</Button>
+                <Button id="121" class="hijo docena pridocena" value="">1°</Button>
+            </div>
+            <div class="padre">
+                <Button id="7" class="hijo inpar primeraColumna" value="7">07</Button>
+                <Button id="8" class="hijo par segundaColumna" value="8">08</Button>
+                <Button id="9" class="hijo inpar terceraColumna" value="9">09</Button>
+                <Button id="122" class="hijo docena pridocena" value="">1°</Button>
+            </div>
+            <div class="padre">
+                <Button id="10" class="hijo par primeraColumna" value="10">10</Button>
+                <Button id="11" class="hijo inpar segundaColumna" value="11">11</Button>
+                <Button id="12" class="hijo par terceraColumna" value="12">12</Button>
+                <Button id="123" class="hijo docena pridocena" value="">1°</Button>
+            </div>
+            <div class="padre">
+                <Button id="13" class="hijo inpar primeraColumna" value="13">13</Button>
+                <Button id="14" class="hijo par segundaColumna" value="14">14</Button>
+                <Button id="15" class="hijo inpar terceraColumna" value="15">15</Button>
+                <Button id="124" class="hijo docena segdocena" value="3">2°</Button>
+            </div>
+            <div class="padre">
+                <Button id="16" class="hijo par primeraColumna" value="16">16</Button>
+                <Button id="17" class="hijo inpar segundaColumna" value="17">17</Button>
+                <Button id="18" class="hijo par terceraColumna" value="18">18</Button>
+                <Button id="125" class="hijo docena segdocena" value="3">2°</Button>
+            </div>
+            <div class="padre">
+                <Button id="19" class="hijo inpar primeraColumna" value="19">19</Button>
+                <Button id="20" class="hijo par segundaColumna" value="20">20</Button>
+                <Button id="21" class="hijo inpar terceraColumna" value="21">21</Button>
+                <Button id="126" class="hijo docena segdocena" value="3">2°</Button>
+            </div>
+            <div class="padre">
+                <Button id="22" class="hijo par primeraColumna" value="22">22</Button>
+                <Button id="23" class="hijo inpar segundaColumna" value="23">23</Button>
+                <Button id="24" class="hijo par terceraColumna" value="24">24</Button>
+                <Button id="127" class="hijo docena segdocena" value="3">2°</Button>
+            </div>
+            <div class="padre">
+                <Button id="25" class="hijo inpar primeraColumna" value="25">25</Button>
+                <Button id="26" class="hijo par segundaColumna" value="26">26</Button>
+                <Button id="27" class="hijo inpar terceraColumna" value="27">27</Button>
+                <Button id="128" class="hijo docena terdocena"  value="3">3°</Button>
+            </div>
+            <div class="padre">
+                <Button id="28" class="hijo par primeraColumna" value="28">28</Button>
+                <Button id="29" class="hijo inpar segundaColumna" value="29">29</Button>
+                <Button id="30" class="hijo par terceraColumna" value="30">30</Button>
+                <Button id="129" class="hijo docena terdocena" value="3">3°</Button>
+            </div>
+            <div class="padre">
+                <Button id="31" class="hijo inpar primeraColumna" value="31">31</Button>
+                <Button id="32" class="hijo par segundaColumna" value="32">32</Button>
+                <Button id="33" class="hijo inpar terceraColumna" value="33">33</Button>
+                <Button id="130" class="hijo docena terdocena" value="3">3°</Button>
+            </div>
+            <div class="padre">
+                <Button id="34" class="hijo par primeraColumna" value="34">34</Button>
+                <Button id="35" class="hijo inpar segundaColumna" value="35">35</Button>
+                <Button id="36" class="hijo par terceraColumna" value="36">36</Button>
+                <Button id="131" class="hijo docena terdocena" value="3">3°</Button>
+            </div>
+        </div>
+        
+        <div class="lasTriadas">
+            <div class="padre">
+                <Button id="150" class="hijo triada" value="1">1°</Button>
+                <Button id="151" class="hijo triada" value="2">2°</Button>
+                <Button id="152" class="hijo triada" value="3">3°</Button>
+                <Button id="nada" class="hijo " value="3°">--</Button>
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="opciones">
+
+        <br>
+        <label for="">Negro</label>
+        <input type="checkbox" class="botonNegro" id="">
+        <label for="">Rojo</label>
+        <input type="checkbox"class="botonRojo" id="">
+        <br>
+        <label for="">Primera Docena</label>
+        <input type="checkbox" class="" id="primeraDocena">
+        <label for="">Segunda Docena</label>
+        <input type="checkbox"class="" id="segundaDocena">
+        <label for="">Tercera Docena</label>
+        <input type="checkbox"class="" id="terceraDocena">
+        <br>
+        <label for="">Primera Columna</label>
+        <input type="checkbox" class="" id="primeraColumna">
+        <label for="">Segunda Columna</label>
+        <input type="checkbox"class="" id="segundaColumna">
+        <label for="">Tercera Columna</label>
+        <input type="checkbox"class="" id="terceraColumna">
+        <br>
+        <label for="">Del 1 al 13</label>
+        <input type="checkbox" class="del1al13" id="">
+        <label for="">Del 14 al 36</label>
+        <input type="checkbox"class="del14al36" id="">
+        <br>
+    
+        
+        <p id="resultadoNumero"></p>
+        <p id="resultadoTriada"></p>
+        <p id="resultadoParidad"></p>
+        
+    </div>
+
+    <div class="estadisticas">
+
+        <input type="button" class="boton" value="Tirar" onclick="tirar()">
+        <br>
+        <input type="button" class="boton"  value="Reniciar" onclick="restart()">
+        <br>
+        <button onclick="agregarDinero()">Agregar Dinero</button>
+        <br>
+        <p id="visualizacionDeDinero"></p>
+    </div>
+    <div class="cuantoApuesta">
+        <input type="button" class="Apuestas"  value="1" onclick="agregarApuesta()">
+        <input type="button" class="Apuestas"  value="2" onclick="agregarApuesta()">
+        <input type="button" class="Apuestas"  value="5" onclick="agregarApuesta()">
+        <input type="button" class="Apuestas"  value="10" onclick="agregarApuesta()">
+        <input type="button" class="Apuestas"  value="50" onclick="agregarApuesta()">
+        <input type="button" class="Apuestas"  value="100" onclick="agregarApuesta()">
+        <input type="button" class="Apuestas"  value="500" onclick="agregarApuesta()">
+     
+        <button onclick="agregarApuesta()">Atras</button>
+
+        <p id="visualizacionDeApuesta"></p>
+    </div>
+    
+    
+    <script src="codigo.js"></script>
+</body>
+</html>
